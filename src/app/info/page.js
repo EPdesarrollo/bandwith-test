@@ -15,16 +15,12 @@ export async function info(){
     console.log(data)
     return(
         <>
-        {
-            data.map((element,id)=>{
-                return(
+
                     <div key={id}>
-                    <p >{element.proveedor}</p>
-                    <img src={element.imagen}/>
+                    <p >{data[0].proveedor}</p>
+                    <img src={data[0].imagen}/>
                     </div>
-                )
-            })
-        }
+
         </>
     )
 }
