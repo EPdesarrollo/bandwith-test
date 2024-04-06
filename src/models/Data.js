@@ -6,6 +6,9 @@ const dataSchema = new Schema({
     
         proveedor:{
             type:String
+        },
+        imagen:{
+            type:String
         }
     
 },{timestamps:true})
