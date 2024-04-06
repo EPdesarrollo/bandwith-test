@@ -1,4 +1,6 @@
 
+
+
 async function getData(){
     try{
         const data = await fetch('https://bandwith-test.vercel.app/api/ping',{cache:"no-store"})

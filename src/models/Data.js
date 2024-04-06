@@ -4,7 +4,7 @@ const {Schema} = mongoose;
 
 const dataSchema = new Schema({
     
-        proveedor:{
+        titulo:{
             type:String
         },
         imagen:{
@@ -13,4 +13,4 @@ const dataSchema = new Schema({
     
 },{timestamps:true})
 
-export default mongoose.models.dataDb || mongoose.model('dataDb', dataSchema)
+export default mongoose.models.datadbs || mongoose.model('datadb', dataSchema)
