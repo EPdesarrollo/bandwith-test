@@ -9,5 +9,5 @@ export async function GET(){
 export function POST(){
     return NextResponse.json({
         message:'Creando Task'
-    })
+    },{status:300})
 }

@@ -6,7 +6,7 @@ async function getData(){
         const res = await data.json()
         return res
     } catch(err){
-        console.log(err)
+         return err
     }
 }
 

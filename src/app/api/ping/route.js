@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 import { connectDB } from '@/utils/mongoose'
 import Data from '@/models/Data'
-export const dynamic = 'force-dynamic'
 
 // export function GET(){
 //     connectDB()
@@ -20,8 +19,8 @@ export async function GET(){
             data
         , {status:200})
     } catch(error){
-        return NextResponse.json({
+        return NextResponse.json(
             error
-        }, {status:500})
+        , {status:500})
     }
 }
