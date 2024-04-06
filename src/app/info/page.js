@@ -2,7 +2,7 @@
 async function getData(){
     try{
         const data = await fetch('https://bandwith-test.vercel.app/api/ping',{cache:"no-store"})
-        if(!data.ok) return notFound()
+        if(!data.ok) throw new Error('Error')
         const res = await data.json()
         return res
     } catch(err){
