@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { connectDB } from '@/utils/mongoose'
 import Data from '@/models/Data'
+export const dynamic = 'force-dynamic'
 
 // export function GET(){
 //     connectDB()

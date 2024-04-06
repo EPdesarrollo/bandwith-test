@@ -16,10 +16,10 @@ export async function info(){
     return(
         <>
 
-                    <div key={id}>
+                  
                     <p >{data[0].proveedor}</p>
                     <img src={data[0].imagen}/>
-                    </div>
+             
 
         </>
     )
