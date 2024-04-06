@@ -1,7 +1,7 @@
 
 async function getData(){
     try{
-        const data = await fetch('http://localhost:3000/api/ping',{cache:"no-store"})
+        const data = await fetch('https://bandwith-test.vercel.app/api/ping',{cache:"no-store"})
         if(!data.ok) return notFound()
         const res = await data.json()
         return res
