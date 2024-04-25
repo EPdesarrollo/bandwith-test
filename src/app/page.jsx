@@ -12,8 +12,8 @@ export default function Home() {
   height="450"
   style={{margin:'2rem'}}
   loading="lazy"
-  allowfullscreen
-  referrerpolicy="no-referrer-when-downgrade"
+  allowFullScreen
+  referrerPolicy="no-referrer-when-downgrade"
   src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_MAPS_API}
     &q=Space+Needle,Seattle+WA`}>
 </iframe>
