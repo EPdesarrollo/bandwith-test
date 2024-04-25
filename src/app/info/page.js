@@ -21,7 +21,7 @@ export async function info(){
     return(
         <>
 
-                  
+
                     <p >{data[0].proveedor}</p>
                     <img src={data[0].imagen}/>
              
